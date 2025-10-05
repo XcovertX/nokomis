@@ -1,5 +1,10 @@
 #include "resources.h"
 
+typedef struct resource_a_t resource_a_t;
+typedef struct resource_b_t resource_b_t;
+typedef struct resource_c_t resource_c_t;
+typedef struct result_t result_t;
+
 int do_task(result_t *result)
 {
     resource_a_t *this_a = NULL;
