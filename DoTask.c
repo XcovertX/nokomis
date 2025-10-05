@@ -1,4 +1,4 @@
-#include "resources.h"
+#include <cstddef>
 
 typedef struct resource_a_t resource_a_t;
 typedef struct resource_b_t resource_b_t;
