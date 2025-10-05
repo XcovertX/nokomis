@@ -42,8 +42,8 @@ struct PointSet {
         // loop over & write
         for (auto& p : pts) {
             f << std::setprecision(17) << p.x;
-            for (auto& [k, v] : p.attrs) {
-                f << "," << k << "=" << v;
+            for (auto it = p.attrs.begin(); it != p.attrs.end(); ++it) {
+                f << "," << it->first << "=" << it->second;
             }
             f << "\n";
         }
