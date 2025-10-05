@@ -17,7 +17,7 @@ int do_task(result_t *result)
     if (acquire_a(&this_a) != 0 || !this_a)
         goto cleanup;
 
-    // Try to acquire resource B (may return NULL)
+    // Try to acquire resource B
     this_b = acquire_b(this_a);
     if (!this_b)
         goto cleanup;
