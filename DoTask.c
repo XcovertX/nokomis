@@ -1,3 +1,5 @@
+#include "resources.h"
+
 int do_task(result_t *result)
 {
     resource_a_t *this_a = NULL;
